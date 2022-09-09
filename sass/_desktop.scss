@@ -1,0 +1,27 @@
+@use 'base' as b;
+
+$mobile: "500px";
+$tablet: "600px";
+
+body {
+
+  background-color: orange;
+
+  p {
+    font-size: 2rem;
+  }
+
+  @include b.break($tablet) {
+    background-color: red;
+    display: flex;
+
+    p{
+        font-size: 4rem;
+    }
+  }
+  
+  @include b.break($mobile) {
+    background-color: green;
+    display: grid;
+  }
+}

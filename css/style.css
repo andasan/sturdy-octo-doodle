@@ -1,0 +1,23 @@
+body {
+  background-color: orange;
+}
+body p {
+  font-size: 2rem;
+}
+@media screen and (max-width: 600px) {
+  body {
+    background-color: red;
+    display: flex;
+  }
+  body p {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    background-color: green;
+    display: grid;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
