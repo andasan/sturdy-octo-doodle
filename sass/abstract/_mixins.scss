@@ -1,0 +1,9 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+@mixin break($width) {
+    @media screen and (min-width: $width) {
+      @content
+    }
+}
